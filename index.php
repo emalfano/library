@@ -11,13 +11,25 @@
 <!--    <script src="main.js"></script>-->
 </head>
 <body>
-<IMG src="images/library.jpg" width="300" height="200" >
+<header>
+    <IMG src="images/books.jpg"  >
+    <p>My Library</p>
+</header>
+<main>
 <?php
-date_default_timezone_set('UTC');
-echo "time is " . date("h:i:s:") . "<br>";
+date_default_timezone_set('America/Los_Angeles');
+echo "Current local time is " . date("h:i:s") . "<br>";
 ?>
-<hr>
-<h3> Welcome to My Library! </h3>
-<a href="booksearch.html">Browse our books</a>
+    <hr>
+    <h3> Welcome to My Library! </h3>
+    <h4> (because a librarian can never have enough ways to catalog her books!) </h4>
+    <a href="booksearch.html">Browse my books</a>
+    <?php
+        
+    ?>
+    </main>
+    <footer>
+        <p>&copy;Elizabeth Alfano 2016</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Book Search</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h3>Search My Book Catalog</h3>
+<hr>
+You may search by title and/or author OR subject<br>
+<form action="booksearch.php" method="POST">
+    <table bgcolor="#bdc0ff" cellpadding="6">
+        <tbody>
+        <tr>
+            <td>Title:</td>
+            <td><INPUT type="text" name="searchtitle"></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td><INPUT type="text" name="searchauthor"></td>
+        </tr>
+        <tr>
+            <td><b>OR</b></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Subject:</td>
+            <td><INPUT type="text" name="searchsubject"></td>
+        </tr>
+            <td></td>
+            <td><INPUT type="submit" name="submit" value="Submit"></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

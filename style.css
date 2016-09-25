@@ -1,3 +1,37 @@
 body {
     background-color: white;
+    margin: 0;
+    font-size: 0;
+    height: 100vh;
+}
+header, footer {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    height: 20vh;
+}
+header img {
+    height: 100%;
+}
+header p {
+    position: relative;
+    /*left: 40%;*/
+    /*bottom: 40%;*/
+    float: right;
+    padding-right: 40%;
+}
+footer {
+    height: 10vh;
+
+}
+footer p {
+    position: relative;
+    /*left: 40%;*/
+    /*bottom: 40%;*/
+    float: right;
+    padding-right: 40%;
+}
+main {
+    font-size: medium;
+    height: 70vh;
 }
