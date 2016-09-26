@@ -9,8 +9,8 @@
 
 <?php
 # This is the PDO version
-
-# Get Data from
+require_once('mysql_connect.php');
+# Get Data from mysql db
 
 $searchtitle = trim($_POST['searchtitle']);
 $searchauthor = trim($_POST['searchauthor']);
@@ -27,7 +27,7 @@ if (!$searchtitle && !$searchauthor & !$searchsubject){
 
 #open the database
 try {
-    $db = new PDO("mysql:host=localhost;dbname=library", "root", "root");
+    //$db = new PDO("mysql:host=localhost;dbname=library", "root", "root");
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e){
